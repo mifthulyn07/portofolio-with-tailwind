@@ -1346,6 +1346,16 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.dark\:shadow-slate-700:is(.dark *) {
+  --tw-shadow-color: #334155;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark\:shadow-slate-800:is(.dark *) {
+  --tw-shadow-color: #1e293b;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 @media (min-width: 768px) {
   .md\:w-1\/2 {
     width: 50%;
