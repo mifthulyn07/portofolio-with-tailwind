@@ -1356,6 +1356,21 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.dark\:shadow-slate-100:is(.dark *) {
+  --tw-shadow-color: #f1f5f9;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark\:shadow-slate-950:is(.dark *) {
+  --tw-shadow-color: #020617;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark\:shadow-black:is(.dark *) {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 @media (min-width: 768px) {
   .md\:w-1\/2 {
     width: 50%;
