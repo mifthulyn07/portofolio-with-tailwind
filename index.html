@@ -845,7 +845,7 @@
             </p>
           </div>
         </div>
-        <form>
+        <form onsubmit="sendEmail(); reset(); return false;">
           <div class="w-full lg:w-2/3 lg:mx-auto">
             <!-- name -->
             <div class="w-full px-4 mb-8">
@@ -873,23 +873,23 @@
 
             <!-- message -->
             <div class="w-full mb-8 px-4">
-              <label for="Message" class="text-base text-primary font-bold"
+              <label for="message" class="text-base text-primary font-bold"
                 >Message</label
               >
               <textarea
-                id="Message"
+                id="message"
                 class="h-32 w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
               ></textarea>
             </div>
 
             <!-- button -->
             <div class="w-full px-4">
-              <a
-                href="mailto:mifthulyn07@gmail.com"
-                class="text-base flex justify-center align-center font-semibold text-white hover:opacity-80 transition duration-500 hover:shadow-lg bg-primary py-3 px-8 rounded-full"
+              <button
+                type="submit"
+                class="text-base w-full font-semibold text-white hover:opacity-80 transition duration-500 hover:shadow-lg bg-primary py-3 px-8 rounded-full"
               >
                 Send Message
-              </a>
+              </button>
             </div>
           </div>
         </form>
@@ -1090,6 +1090,7 @@
     /></a>
 
     <!-- script -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="dist/js/script.js"></script>
   </body>
 </html>
