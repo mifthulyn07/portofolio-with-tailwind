@@ -56,16 +56,3 @@ if (
 } else {
   darkToggle.checked = false;
 }
-
-// send email
-function sendEmail() {
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "mifthulyn07@gmail.com",
-    Password: "288728106051CF016462BB6BB38939842059",
-    To: "mifthulyn07@gmail.com",
-    From: document.getElementById("email").value,
-    Subject: "From Your Portofolio: " + document.getElementById("name").value,
-    Body: document.getElementById("message").value,
-  }).then((message) => alert(message));
-}
