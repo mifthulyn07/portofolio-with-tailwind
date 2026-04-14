@@ -19,6 +19,29 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
+        position: relative;
+      }
+      /* meet our team fitur */
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .mem-card {
+        transition: width 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    </style>
   </head>
   <body>
     <!-- navigation -->
@@ -99,15 +122,6 @@
                   >
                 </li>
 
-                <!-- clients -->
-                <!-- <li class="group">
-                  <a
-                    href="#clients"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white"
-                    >Clients</a
-                  >
-                </li> -->
-
                 <!-- contact -->
                 <li class="group">
                   <a
@@ -147,20 +161,31 @@
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1
+              data-aos="fade-in"
+              data-aos-duration="1200"
               class="text-lg font-semibold text-primary md:text-xl lg:text-2xl"
             >
               Hello everyone 😁, i am
               <span
+                data-aos="fade-in"
+                data-aos-duration="1200"
+                data-aos-delay="200"
                 class="block font-bold text-dark text-3xl mt-1 md:text-4xl lg:text-5xl dark:text-white"
                 >Miftahul Ulyana Hutabarat</span
               >
             </h1>
             <h2
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="400"
               class="font-medium dark:text-slate-400 text-secondary text-lg md:text-xl lg:text-2xl mb-5"
             >
               Web Developer | Fullstack Developer | Tech Enthusiast
             </h2>
             <p
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="600"
               class="text-base font-medium md:text-lg lg:text-xl dark:text-slate-400 text-secondary mb-10 leading-relaxed"
             >
               Understanding comes from doing, not just studying.
@@ -169,6 +194,9 @@
               >.
             </p>
             <a
+              data-aos="zoom-in"
+              data-aos-duration="1200"
+              data-aos-delay="800"
               href="#contact"
               class="inline-flex item-center text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
               >Contact Me</a
@@ -177,6 +205,9 @@
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-10 lg:mt-0">
               <img
+                data-aos="zoom-in"
+                data-aos-duration="1200"
+                data-aos-delay="400"
                 src="dist/img/miftah.png"
                 alt="Miftahul Ulyana Hutabarat"
                 class="max-w-full mx-auto relative z-10"
@@ -198,16 +229,24 @@
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
             <h4
+              data-aos="fade-in"
+              data-aos-duration="1200"
               class="font-bold uppercase text-primary text-lg md:text-xl mb-3"
             >
               About
             </h4>
             <h2
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="200"
               class="font-bold text-dark dark:text-white text-3xl mb-5 max-w-md lg:text-4xl"
             >
               Let me introduce myself
             </h2>
             <p
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="400"
               class="font-medium text-base mb-5 md:text-lg lg:text-xl text-secondary dark:text-slate-400 max-w-full"
             >
               A fresh graduate in
@@ -222,6 +261,9 @@
               the field of information technology.
             </p>
             <a
+              data-aos="zoom-in"
+              data-aos-duration="1200"
+              data-aos-delay="600"
               href="https://drive.google.com/file/d/1vw7l4EMZ74DISaIk4MmyJ6rCHHQImrRG/view?usp=sharing"
               class="inline-flex item-center text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
               target="_blank"
@@ -230,11 +272,17 @@
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="200"
               class="font-semibold text-dark dark:text-white text-2xl md:text-3xl lg:text-4xl lg:pt-10 mb-5"
             >
               Get in Touch
             </h3>
             <p
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="400"
               class="font-medium text-base md:text-lg lg:text-xl text-secondary dark:text-slate-400 mb-6"
             >
               You can connect with me on LinkedIn for professional networking,
@@ -247,6 +295,8 @@
                 href="mailto:mifthulyn07@gmail.com"
                 target="_blank"
                 class="w-9 h-9 mr-3 hover:text-white text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
+                data-aos="fade-left"
+                data-aos-duration="800"
               >
                 <svg
                   width="20"
@@ -266,6 +316,9 @@
                 href="https://www.linkedin.com/in/miftahul-ulyana-hutabarat"
                 target="_blank"
                 class="w-9 h-9 mr-3 hover:text-white text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="100"
               >
                 <svg
                   width="20"
@@ -285,6 +338,9 @@
                 href="https://github.com/mifthulyn07"
                 target="_blank"
                 class="w-9 h-9 mr-3 hover:text-white text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="150"
               >
                 <svg
                   width="20"
@@ -304,6 +360,9 @@
                 href="https://medium.com/@mifthulyn07"
                 target="_blank"
                 class="w-9 h-9 mr-3 hover:text-white text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="200"
               >
                 <svg
                   width="20"
@@ -323,6 +382,9 @@
                 href="https://www.instagram.com/mifthulyn07"
                 target="_blank"
                 class="w-9 h-9 mr-3 hover:text-white text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="250"
               >
                 <svg
                   width="20"
@@ -342,6 +404,9 @@
                 href="https://www.hackerrank.com/profile/mifthulyn07"
                 target="_blank"
                 class="w-9 h-9 mr-3 hover:text-white text-secondary dark:text-slate-400 hover:border-primary hover:bg-primary rounded-full flex justify-center items-center border border-slate-300"
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-delay="300"
               >
                 <svg
                   width="20"
@@ -368,16 +433,24 @@
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-5">
             <h4
+              data-aos="fade-in"
+              data-aos-duration="1200"
               class="font-bold text-lg md:text-xl uppercase text-primary mb-2"
             >
               Skill
             </h4>
             <h2
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="200"
               class="font-bold text-dark dark:text-white text-3xl lg:text-4xl mb-4"
             >
               Web Development Expertise
             </h2>
             <p
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="400"
               class="font-medium text-base dark:text-slate-400 text-secondary md:text-lg lg:text-xl"
             >
               As a dedicated web developer, I specialize in crafting efficient
@@ -391,6 +464,9 @@
             <!-- html -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/html.svg"
@@ -404,6 +480,9 @@
             <!-- css -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/css.svg"
@@ -417,6 +496,9 @@
             <!-- bootstrap -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/bootstrap.svg"
@@ -430,6 +512,9 @@
             <!-- Tailwind -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/tailwind.svg"
@@ -443,6 +528,9 @@
             <!-- javascript -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/javascript.svg"
@@ -456,6 +544,9 @@
             <!-- Vue js -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/vuejs.svg"
@@ -469,6 +560,9 @@
             <!-- Jquery -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/jquery.svg"
@@ -482,6 +576,9 @@
             <!-- PHP -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/php.svg"
@@ -495,6 +592,9 @@
             <!-- Mysql -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/mysql.svg"
@@ -508,6 +608,9 @@
             <!-- java -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/java.svg"
@@ -522,6 +625,9 @@
             <!-- python -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/python.svg"
@@ -535,6 +641,9 @@
             <!-- CPP -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/cpp.svg"
@@ -548,6 +657,9 @@
             <!-- git -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/git.svg"
@@ -561,6 +673,9 @@
             <!-- github -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/github.svg"
@@ -571,10 +686,12 @@
                 >Github</span
               >
             </div>
-
             <!-- laravel -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/laravel.svg"
@@ -588,6 +705,9 @@
             <!-- Postman -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="100"
             >
               <img
                 src="dist/img/skill/postman.svg"
@@ -601,6 +721,9 @@
             <!-- Rest API -->
             <div
               class="inline-flex item-center px-2 py-1 m-2 justify-center items-center border border-slate-300 rounded-full"
+              data-aos="zoom-in"
+              data-aos-del
+              data-aos-duration="600"
             >
               <img
                 src="dist/img/skill/rest-api.svg"
@@ -622,16 +745,24 @@
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4
+              data-aos="fade-in"
+              data-aos-duration="1200"
               class="font-bold uppercase text-lg md:text-xl text-primary mb-2"
             >
               Portofolio
             </h4>
             <h2
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="200"
               class="font-bold text-white dark:text-dark text-3xl lg:text-4xl mb-4"
             >
               My Learning Journey
             </h2>
             <p
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="400"
               class="font-medium text-base text-slate-400 dark:text-secondary md:text-lg lg:text-xl"
             >
               Explore my collection of projects and case studies, reflecting my
@@ -644,15 +775,25 @@
         >
           <!-- SharePic-API -->
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div
+              class="rounded-md shadow-md overflow-hidden"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <img src="dist/img/portofolio/sharepic.png" alt="portofolio" />
             </div>
             <h3
               class="mb-3 font-semibold text-xl text-white dark:text-dark mt-5"
+              data-aos="fade-up"
+              data-aos-duration="1200"
             >
               SharePic-API (2024)
             </h3>
-            <p class="font-medium text-base text-slate-400 dark:text-secondary">
+            <p
+              class="font-medium text-base text-slate-400 dark:text-secondary"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               This social media platform lets users share and showcase photos.
               Users can upload multiple photos at once. Features include profile
               photo changes, a like button, a comment section, and the ability
@@ -676,7 +817,11 @@
 
           <!-- proposal submission system -->
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div
+              class="rounded-md shadow-md overflow-hidden"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <img
                 src="dist/img/portofolio/proposal-submission-system.png"
                 alt="portofolio"
@@ -684,10 +829,16 @@
             </div>
             <h3
               class="mb-3 font-semibold text-xl text-white dark:text-dark mt-5"
+              data-aos="fade-up"
+              data-aos-duration="1200"
             >
               Proposal Submission system + Thesis Title Tracking (2024)
             </h3>
-            <p class="font-medium text-base text-slate-400 dark:text-secondary">
+            <p
+              class="font-medium text-base text-slate-400 dark:text-secondary"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               An application for students to submit their proposals, integrated
               with machine learning to verify similarity with Google Scholar and
               alumni database titles. Built with Laravel 10 (PHP), Livewire,
@@ -697,15 +848,25 @@
 
           <!-- DailyBrief-API -->
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div
+              class="rounded-md shadow-md overflow-hidden"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <img src="dist/img/portofolio/dailybrief.png" alt="portofolio" />
             </div>
             <h3
               class="mb-3 font-semibold text-xl text-white dark:text-dark mt-5"
+              data-aos="fade-up"
+              data-aos-duration="1200"
             >
               DailyBrief-API (2022)
             </h3>
-            <p class="font-medium text-base text-slate-400 dark:text-secondary">
+            <p
+              class="font-medium text-base text-slate-400 dark:text-secondary"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               Daily Brief is a daily employee attendance app designed to
               simplify the process of recording and managing employee
               attendance. With this app, employees can easily check in and check
@@ -715,7 +876,11 @@
 
           <!-- columnar cipher -->
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div
+              class="rounded-md shadow-md overflow-hidden"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <img
                 src="dist/img/portofolio/columnar-cipher.png"
                 alt="portofolio"
@@ -723,10 +888,16 @@
             </div>
             <h3
               class="mb-3 font-semibold text-xl text-white dark:text-dark mt-5"
+              data-aos="fade-up"
+              data-aos-duration="1200"
             >
               Columnar Cipher (2022)
             </h3>
-            <p class="font-medium text-base text-slate-400 dark:text-secondary">
+            <p
+              class="font-medium text-base text-slate-400 dark:text-secondary"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               This application showcases the Columnar Cipher encryption method
               using HTML, CSS, and JavaScript. Columnar Cipher encrypts messages
               by shifting the plaintext with a given key. Explore the
@@ -741,7 +912,11 @@
 
           <!-- rock paper Scissors -->
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+            <div
+              class="rounded-md shadow-md overflow-hidden"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <img
                 src="dist/img/portofolio/rock-paper-scissors-game.png"
                 alt="portofolio"
@@ -749,10 +924,16 @@
             </div>
             <h3
               class="mb-3 font-semibold text-xl text-white dark:text-dark mt-5"
+              data-aos="fade-up"
+              data-aos-duration="1200"
             >
               Rock Paper Scissors Game (2022)
             </h3>
-            <p class="font-medium text-base text-slate-400 dark:text-secondary">
+            <p
+              class="font-medium text-base text-slate-400 dark:text-secondary"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               This application is a Rock Paper Scissors game built using HTML,
               CSS, and JavaScript. It features a simple interface and uses
               computer-generated random choices for gameplay. You can view the
@@ -768,44 +949,30 @@
       </div>
     </section>
 
-    <!-- clients -->
-    <!-- <section id="clients" class="pt-36 pb-32 bg-slate-700">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2 md:text-xl">
-              Clients
-            </h4>
-            <h2 class="font-bold text-white dark:text-dark text-3xl lg:text-4xl mb-4">
-              Yang pernah bekerja sama
-            </h2>
-            <p
-              class="font-medium text-base md:text-lg lg:text-xl text-secondary"
-            >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Similique maxime aspernatur ex ipsa alias voluptates eum.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <!-- blog -->
     <section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4
+              data-aos="fade-in"
+              data-aos-duration="1200"
               class="font-bold uppercase text-lg md:text-xl text-primary mb-2"
             >
               Blog
             </h4>
             <h2
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="200"
               class="font-bold text-dark dark:text-white text-3xl lg:text-4xl mb-4"
             >
               Latest Posts
             </h2>
             <p
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="400"
               class="font-medium text-base text-secondary dark:text-slate-400 md:text-lg lg:text-xl"
             >
               I love coding and sharing what I've learned. You can explore
@@ -814,7 +981,13 @@
           </div>
         </div>
         <div class="flex flex-wrap">
-          <div class="w-full p-4 lg:w-1/2 xl:w-1/3">
+          <div
+            class="w-full p-4 lg:w-1/2 xl:w-1/3"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-sine"
+          >
             <div
               class="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden"
             >
@@ -858,16 +1031,24 @@
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4
+              data-aos="fade-in"
+              data-aos-duration="1200"
               class="font-bold uppercase text-lg md:text-xl text-primary mb-2"
             >
               Contact
             </h4>
             <h2
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="200"
               class="font-bold text-dark text-3xl dark:text-white lg:text-4xl mb-4"
             >
               I’m available for every opportunity!
             </h2>
             <p
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="400"
               class="font-medium text-base text-secondary dark:text-slate-400 md:text-lg lg:text-xl"
             >
               Interested in working with me? Need help on your project? Or just
@@ -878,7 +1059,11 @@
         <form onsubmit="sendEmail(); reset(); return false;">
           <div class="w-full lg:w-2/3 lg:mx-auto">
             <!-- name -->
-            <div class="w-full px-4 mb-8">
+            <div
+              class="w-full px-4 mb-8"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <label for="name" class="text-base text-primary font-bold"
                 >Name</label
               >
@@ -890,7 +1075,11 @@
             </div>
 
             <!-- email -->
-            <div class="w-full mb-8 px-4">
+            <div
+              class="w-full mb-8 px-4"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <label for="email" class="text-base text-primary font-bold"
                 >Email</label
               >
@@ -902,7 +1091,11 @@
             </div>
 
             <!-- message -->
-            <div class="w-full mb-8 px-4">
+            <div
+              class="w-full mb-8 px-4"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <label for="message" class="text-base text-primary font-bold"
                 >Message</label
               >
@@ -913,7 +1106,11 @@
             </div>
 
             <!-- button -->
-            <div class="w-full px-4">
+            <div
+              class="w-full px-4"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <button
                 type="submit"
                 class="text-base w-full font-semibold text-white hover:opacity-80 transition duration-500 hover:shadow-lg bg-primary py-3 px-8 rounded-full"
@@ -1123,5 +1320,11 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="dist/js/sendEmail.js"></script>
     <script src="dist/js/script.js"></script>
+
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
